@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+---
+
+spring:
+  datasource:
+    username: root
+    password: Cc@123456
+    url: jdbc:mysql://49.235.106.235:3306/tcs?useUnicode=true&amp;characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+  devtools:
+    restart:
+      exclude: static/**
+
+
+
+---
+
+mybatis:
+  #config-location: classpath:mybatis1.xml
+  mapper-locations: classpath:com/example/demo/mapper/*.xml
+  type-aliases-package: com.example.demo.bean
+
+---
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
