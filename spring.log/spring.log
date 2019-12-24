@@ -1,0 +1,11 @@
+2019-12-24 21:13:39.117  INFO 10216 --- [main] com.tcs.HomeworkApplication              : Starting HomeworkApplication on PJ7AFC9QQJF28O6 with PID 10216 (D:\IdeaProjects\SpringBoot\homework\target\classes started by Administrator in D:\IdeaProjects\SpringBoot)
+2019-12-24 21:13:39.123  INFO 10216 --- [main] com.tcs.HomeworkApplication              : No active profile set, falling back to default profiles: default
+2019-12-24 21:13:41.764  INFO 10216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-12-24 21:13:41.782  INFO 10216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-24 21:13:41.783  INFO 10216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-24 21:13:41.985  INFO 10216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-24 21:13:41.986  INFO 10216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2728 ms
+2019-12-24 21:13:42.822  INFO 10216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-24 21:13:43.404  INFO 10216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-12-24 21:13:43.424  INFO 10216 --- [main] com.tcs.HomeworkApplication              : Started HomeworkApplication in 5.769 seconds (JVM running for 7.506)
+2019-12-24 21:14:17.617  INFO 10216 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
