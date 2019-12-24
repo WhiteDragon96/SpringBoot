@@ -1,0 +1,14 @@
+file:
+  component:
+    file-name: uk
+    file-path: D://uk
+    file-max: ${random.int[1024,3333]} #随机生成数字
+    file-map: {key1: ukvalue1,key2: value2} #map
+    file-list: zhangsanuk,wangwu,maliu #list
+    user-detail.email: ukcctvsx@163.com  #javabean赋值形式
+    user-detail.mobile: 110uk
+    pic-file-path: ${file.component.file-path}/pic/picuk #占位符
+server:
+  port: 8088
+  servlet:
+    context-path: /

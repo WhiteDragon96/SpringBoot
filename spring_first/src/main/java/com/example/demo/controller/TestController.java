@@ -32,7 +32,7 @@ public class TestController {
     @RequestMapping("user/login")
     public List<Cnarea2018> login(){
         Cnarea2018Example cnarea2018Example = new Cnarea2018Example();
-        cnarea2018Example.createCriteria().andNameLike("%" + "南宁" + "%");
+        /*cnarea2018Example.createCriteria().andNameLike("%" + "南宁" + "%");*/
         List<Cnarea2018> cnarea2018s = cnarea2018Service.selectByExample(cnarea2018Example);
 
         return cnarea2018s;
@@ -49,14 +49,13 @@ public class TestController {
             userList.add(user);
         }
         List<User> userList1 = userService.insertUser(userList);
-        System.out.println("33333344422134433");
-        System.out.println("33333344422134433");
+
         return userList;
     }
 
     @Autowired
     PoetriesMapper poetriesMapper;
-    @RequestMapping("user/select")
+    @RequestMapping("user/getAllPoet")
     public List<Poetries> select(){
         PoetriesExample poetriesExample = new PoetriesExample();
         List<Poetries> poetries = poetriesMapper.selectByExample(poetriesExample);

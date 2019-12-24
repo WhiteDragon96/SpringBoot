@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
         List<User> users = userMapper.selectByExample(userExample);
         return users;
     }
-    @Transactional
+    @Transactional//增加事物
     @Override
     public List<User> insertUser(List<User> userList) {
         for (User user : userList) {

@@ -1,0 +1,15 @@
+
+#file:
+#  component:
+#    file-name: test
+#    file-path: D://file/user
+#    file-max: ${random.int[1024,3333]} #随机生成数字
+#    file-map: {key1: value1,key2: value2} #map
+#    file-list: zhangsan,wangwu,maliu #list
+#    user-detail.email: cctvsx@163.com  #javabean赋值形式
+#    user-detail.mobile: 110
+#    pic-file-path: ${file.component.file-path}/pic #占位符
+#激活配置文件
+spring:
+  profiles:
+    active: us

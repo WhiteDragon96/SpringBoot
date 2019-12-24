@@ -1,0 +1,20 @@
+file:
+  component:
+    file-name: us
+    file-path: D://us
+    file-max: ${random.int[1024,3333]} #随机生成数字
+    file-map: {key1: usvalue1,key2: value2} #map
+    file-list: zhangsanus,wangwu,maliu #list
+    user-detail.email: uscctvsx@163.com  #javabean赋值形式
+    user-detail.mobile: 110us
+    pic-file-path: ${file.component.file-path}/pic/picus #占位符
+server:
+  port: 8084
+  servlet:
+    context-path: /
+cs:
+  file:
+    min-file: ${random.int(102)}
+    parent-path: d:/spring/file
+    pic-path: ${file.component.file-path}/pic
+    txt-path: ${file.component.file-path}/txt
